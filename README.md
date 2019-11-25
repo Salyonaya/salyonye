@@ -15,6 +15,7 @@ in /www add index.html file with random text
 sudo sh
 etcho “randomtext” > index.html
 open nginx.conf file (sudo vi /etc/nginx/nginx.conf)
+
     clear file via *number_of_rows + dd
     put in to file next values:
    
@@ -42,3 +43,13 @@ How to clone repo from Git
 
 git clone https://github.com/salyonaya/salyonye.git
 
+How to run Apache2 server
+install apache2 
+create index.html file in var/www/html directory
+run apache2 in systemctl start apache2.service
+
+To use cgi
+Enable CGI processing in apache
+sudo a2enmod cgi
+
+Configure file 000-defoult.conf
